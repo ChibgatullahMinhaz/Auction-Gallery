@@ -8,6 +8,8 @@ const MainPage = () => {
   const [tabledata, setTableData] = useState([]);
   const [isloading, setLoading] = useState(false);
   const [favorites, setFavorites] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+
   useEffect(() => {
     setLoading(true);
     try {
@@ -22,9 +24,13 @@ const MainPage = () => {
   }, [isloading]);
 
   const handleBit = (data) => {
-    const notify = () => toast("Wow so easy !");
+    const notify = () => toast("An item is added to favorites.");
     if (!favorites.find((item) => item.id === data.id)) {
       setFavorites([...favorites, data]);
+      const getItemPrice = parseFloat(
+        data.currentBidPrice.replace("$", "").replace(",", "")
+      );
+      setTotalPrice(totalPrice + getItemPrice);
       notify();
     } else {
       const notify = () => toast("Item Already Added");
@@ -51,7 +57,7 @@ const MainPage = () => {
         )}
 
         <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
-          <Favorite favorites={favorites} />
+          <Favorite favorites={favorites} totalPrice={totalPrice} />
         </div>
       </div>
     </div>

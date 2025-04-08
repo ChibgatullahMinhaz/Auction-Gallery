@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 
-export const Favorite = ({ favorites }) => {
-    const [totalPrice, setTotalPrice] = useState(0);
+export const Favorite = ({ favorites ,totalPrice}) => {
 
   const [totalBidAmount, setTotalBidAmount] = useState(0);
     const handleRemoveItem = (itemId) => {
