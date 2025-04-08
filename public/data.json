@@ -1,0 +1,66 @@
+[
+    {
+      "id": "1",
+      "title": "Smartphone - Galaxy Z Flip",
+      "description": "Foldable smartphone with 128GB storage and dual display.",
+      "currentBidPrice": 450.00,
+      "timeLeft": "2d 4h",
+      "bidsCount": 12,
+      "image": "https://example.com/images/galaxy-z-flip.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Mountain Bike",
+      "description": "21-speed mountain bike with front suspension and disc brakes.",
+      "currentBidPrice": 320.75,
+      "timeLeft": "1d 12h",
+      "bidsCount": 9,
+      "image": "https://example.com/images/mountain-bike.jpg"
+    },
+    {
+      "id": "3",
+      "title": "4K Action Camera",
+      "description": "Waterproof 4K action camera with accessories bundle.",
+      "currentBidPrice": 89.99,
+      "timeLeft": "8h 30m",
+      "bidsCount": 23,
+      "image": "https://example.com/images/action-camera.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Gaming Console - PS5",
+      "description": "Sony PlayStation 5 with one controller and Horizon game.",
+      "currentBidPrice": 610.00,
+      "timeLeft": "3d 1h",
+      "bidsCount": 33,
+      "image": "https://example.com/images/ps5.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Designer Handbag",
+      "description": "Luxury leather handbag with gold hardware and dust bag.",
+      "currentBidPrice": 280.25,
+      "timeLeft": "14h 20m",
+      "bidsCount": 17,
+      "image": "https://example.com/images/designer-handbag.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Wireless Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard with blue switches.",
+      "currentBidPrice": 64.99,
+      "timeLeft": "5h 5m",
+      "bidsCount": 7,
+      "image": "https://example.com/images/mechanical-keyboard.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Drone with 4K Camera",
+      "description": "Foldable drone with 4K camera and GPS for beginners.",
+      "currentBidPrice": 150.00,
+      "timeLeft": "1d 6h",
+      "bidsCount": 19,
+      "image": "https://example.com/images/drone.jpg"
+    }
+  ]
+  

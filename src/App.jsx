@@ -1,12 +1,18 @@
 import React from 'react'
 import './App.css'
-import MainPage from './Components/MainPage'
+import Navbar from './Components/Navber'
+import Hero from './Components/Hero';
+import { Footer } from './Components/Footer';
+import MainContent from './Components/MainPage';
 
 function App() {
 
   return (
     <>
-    <MainPage></MainPage>
+    <Navbar></Navbar>
+      <Hero></Hero>
+      <MainContent></MainContent>
+      <Footer></Footer>
     </>
   )
 }
