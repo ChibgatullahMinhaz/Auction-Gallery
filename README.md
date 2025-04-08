@@ -40,22 +40,22 @@ This project is built using **ReactJS** and follows the design and functionality
 ### 🏷️ Active Auctions Section 
 [-] Section Title and Subtitle should **match the Figma**
 [-] Show **6 items**, each with:
-  - 🖼️ Item Image
-  - 🏷️ Item Name
-  - 💰 Current Bid Price
-  - ⏳ Time Left
-  - ❤️ **"Bid Now" button**
+  [-] 🖼️ Item Image
+  [-] 🏷️ Item Name
+  [-] 💰 Current Bid Price
+  [-] ⏳ Time Left
+  [- ]❤️ **"Bid Now" button**
 
 ### ❤️ Favorite Items Section 
 [-] Initially shows:
   [-] Title
   [-] "No items" message
   [-] Total amount = 0
-- After clicking on ❤️ icon, item will be added to favorites:
-  - Item Name
-  - Current Bid Price
-  - Bids Count
-  - ❌ Remove Icon
+[-] After clicking on ❤️ icon, item will be added to favorites:
+  [-] Item Name
+  [-] Current Bid Price
+  [-] Bids Count
+  [-] ❌ Remove Icon
 - Favorite total price will **update accordingly** the Current Bid Price
 
 ### 📦 React-Toastify Integration 
@@ -70,13 +70,13 @@ This project is built using **ReactJS** and follows the design and functionality
 ## ⚔️ **Challenge Requirements**
 
 ### 🧾 Show Data Using Table 
-- Display bid items inside a **table format**.
+[-]Display bid items inside a **table format**.
 
 ### 🔒 Disable ❤️ Button After Click 
-- Clicking on ❤️ will:
-  - Change cursor to `not-allowed`
-  - Disable the button
-  - color it as red
+[-] Clicking on ❤️ will:
+  [-] Change cursor to `not-allowed`
+  [-] Disable the button
+  [-] color it as red
 
 ### ❌ Remove from Favorites 
 - Clicking ❌ will:

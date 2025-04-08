@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
+import { FaHeart } from "react-icons/fa";
+
 import { ToastContainer } from "react-toastify";
-import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Table = ({ tabledata, handleBit }) => {
-  const habletoast = () => {
-    toast("An item is added to favorites.");
-  };
+  const [clickedIcons, setClickedIcons] = useState([]);
 
+  const handleClicked = (data) => {
+    handleBit(data);
+    setClickedIcons([...clickedIcons, data.id]);
+  };
   return (
     <div>
       <div className=" md:col-span-3  bg-white rounded-l-2xl">
@@ -24,8 +28,12 @@ const Table = ({ tabledata, handleBit }) => {
             </thead>
             <tbody>
               {tabledata.map((data) => {
+                const isClicked = clickedIcons.includes(data.id);
                 return (
-                  <tr key={data.id} className="border-b-2 p-4 mt-3 text-center border-gray-200">
+                  <tr
+                    key={data.id}
+                    className="border-b-2 p-4 mt-3 text-center border-gray-200"
+                  >
                     <td className="flex items-center gap-2">
                       <img
                         src={data.image}
@@ -36,11 +44,23 @@ const Table = ({ tabledata, handleBit }) => {
                     </td>
                     <td className="font-semibold">{data.currentBidPrice}</td>
                     <td>{data.timeLeft}</td>
-                    
-                    <td className="text-right" onClick={() => handleBit(data)}>
-                      <AiOutlineHeart onClick={habletoast} size={20} />
+
+                    <td className="text-right">
+                      <button
+                        onClick={() => handleClicked(data)}
+                        disabled={isClicked}
+                        style={{
+                          cursor: isClicked ? "not-allowed" : "pointer",
+                        }}
+                      >
+                        {isClicked ? (
+                          <FaHeart className="text-red-500" size={20} />
+                        ) : (
+                          <AiOutlineHeart className="text-gray-400" size={20} />
+                        )}
+                      </button>
+                      <ToastContainer />
                     </td>
-                    <ToastContainer />
                   </tr>
                 );
               })}

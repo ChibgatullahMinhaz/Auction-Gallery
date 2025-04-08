@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Table from "./Table";
 import { Favorite } from "./Favorite";
 import Loader from "./Loader";
+import { toast } from "react-toastify";
 
 const MainPage = () => {
   const [tabledata, setTableData] = useState([]);
   const [isloading, setLoading] = useState(false);
+  const [favorites, setFavorites] = useState([]);
   useEffect(() => {
     setLoading(true);
     try {
@@ -20,7 +22,14 @@ const MainPage = () => {
   }, [isloading]);
 
   const handleBit = (data) => {
-    console.log(data);
+    const notify = () => toast("Wow so easy !");
+    if (!favorites.find((item) => item.id === data.id)) {
+      setFavorites([...favorites, data]);
+      notify();
+    } else {
+      const notify = () => toast("Item Already Added");
+      notify();
+    }
   };
 
   return (
@@ -32,17 +41,17 @@ const MainPage = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {isloading ? (
           <Loader />
         ) : (
-          <div className="col-span-3 shadow-xl rounded-box rounded-l-2xl">
+          <div className="col-span-2 shadow-xl rounded-box rounded-l-2xl">
             <Table tabledata={tabledata} handleBit={handleBit} />
           </div>
         )}
 
         <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
-          <Favorite />
+          <Favorite favorites={favorites} />
         </div>
       </div>
     </div>
