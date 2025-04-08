@@ -22,10 +22,10 @@ This project is built using **ReactJS** and follows the design and functionality
 ## 📌 **Main Requirements**
 
 ### ✅ Navbar 
-- Design the navbar **exactly like the Figma**.
+[-] Design the navbar **exactly like the Figma**.
 
 ### 🖼️ Banner 
-- Create the banner **exactly like the Figma**.
+[-] Create the banner **exactly like the Figma**.
 
 ### 🗂️ Create JSON for Bid Items 
 - Create a JSON file with **at least 6 bid items**, including:
