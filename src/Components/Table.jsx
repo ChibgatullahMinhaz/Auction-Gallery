@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaHeart } from "react-icons/fa";
 
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Table = ({ tabledata, handleBit }) => {
   const [clickedIcons, setClickedIcons] = useState([]);
+  const notify = () => toast("An item is added to favorites.");
 
   const handleClicked = (data) => {
+    notify();
     handleBit(data);
     setClickedIcons([...clickedIcons, data.id]);
   };
@@ -59,7 +61,6 @@ const Table = ({ tabledata, handleBit }) => {
                           <AiOutlineHeart className="text-gray-400" size={20} />
                         )}
                       </button>
-                      <ToastContainer />
                     </td>
                   </tr>
                 );

@@ -3,6 +3,7 @@ import Table from "./Table";
 import { Favorite } from "./Favorite";
 import Loader from "./Loader";
 import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 const MainPage = () => {
   const [tabledata, setTableData] = useState([]);
@@ -24,22 +25,27 @@ const MainPage = () => {
   }, [isloading]);
 
   const handleBit = (data) => {
-    const notify = () => toast("An item is added to favorites.");
     if (!favorites.find((item) => item.id === data.id)) {
       setFavorites([...favorites, data]);
       const getItemPrice = parseFloat(
         data.currentBidPrice.replace("$", "").replace(",", "")
       );
       setTotalPrice(totalPrice + getItemPrice);
-      notify();
     } else {
-      const notify = () => toast("Item Already Added");
-      notify();
+      toast("Item Already Added");
     }
   };
 
+  const handleRemoveItem = (itemId) => {
+    if (itemId) {
+      toast("Item Removed from favorites"); 
+      setFavorites((prev) => prev.filter((item) => item.id !== itemId));
+    }
+  };
   return (
     <div className="container mx-auto mt-10 mb-10 p-10 bg-[#F9F9F9] min-h-screen">
+      <ToastContainer />
+
       <div className="mb-5">
         <h1 className="text-blue-950 font-bold text-xl">Active Auctions</h1>
         <p className="font-semibold text-gray-500">
@@ -51,13 +57,17 @@ const MainPage = () => {
         {isloading ? (
           <Loader />
         ) : (
-          <div className="col-span-2 shadow-xl rounded-box rounded-l-2xl">
+          <div className="col-span-2 shadow-xl rounded-box rounded-l-2xl self-start">
             <Table tabledata={tabledata} handleBit={handleBit} />
           </div>
         )}
 
-        <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
-          <Favorite favorites={favorites} totalPrice={totalPrice} />
+        <div className="col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl self-start">
+          <Favorite
+            favorites={favorites}
+            totalPrice={totalPrice}
+            handleRemoveItem={handleRemoveItem}
+          />
         </div>
       </div>
     </div>

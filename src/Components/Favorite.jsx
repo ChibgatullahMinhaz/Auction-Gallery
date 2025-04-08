@@ -1,16 +1,9 @@
-import React, { useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 
-export const Favorite = ({ favorites ,totalPrice}) => {
-
-  const [totalBidAmount, setTotalBidAmount] = useState(0);
-    const handleRemoveItem = (itemId) => {
-        const updatedFavorites = favorites.filter((item) => item.id !== itemId);
-        setTotalBidAmount(
-        updatedFavorites.reduce((total, item) => total + item.currentBidPrice, 0)
-        );
-    };
+export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
+ 
+  
   return (
     <div>
       <div className="flex items-center border-b-1 border-gray-200 justify-center gap-2 mb-5">
@@ -33,27 +26,31 @@ export const Favorite = ({ favorites ,totalPrice}) => {
               <div>
                 <h1>{data.title}</h1>
                 <div className="flex items-center justify-between">
-                <h1 className="font-normal text-gray-600">{data.currentBidPrice}</h1>
-                <h1 className="font-normal text-gray-600">Bids:{data.bidsCount}</h1>
+                  <h1 className="font-normal text-gray-600">
+                    {data.currentBidPrice}
+                  </h1>
+                  <h1 className="font-normal text-gray-600">
+                    Bids:{data.bidsCount}
+                  </h1>
                 </div>
               </div>
-             <div>
-             <button onClick={handleRemoveItem}>
-             <RxCross2 />
-
-             </button>
-             </div>
+              <div>
+                <button onClick={()=>handleRemoveItem(data.id)}>
+                  <RxCross2 />
+                </button>
+              </div>
             </div>
           );
         })
       )}
 
-      <div className="flex items-center justify-between mt-5 mb-5">
+      <div className="flex items-center justify-between mt-5 mb-5 px-2">
         <h1 className="font-semibold text-xl"> Total bids Amount</h1>
         <h1 className="font-medium text-xl">
           $<span>{totalPrice}</span>
         </h1>
       </div>
+
     </div>
   );
 };

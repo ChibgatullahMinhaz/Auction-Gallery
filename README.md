@@ -88,7 +88,7 @@ This project is built using **ReactJS** and follows the design and functionality
 - Disable the button✅
 - color it as red✅
 
-### ❌ Remove from Favorites
+### ❌ Remove from Favorites ✅
 
 - Clicking ❌ will:
   - Remove the item from the list
@@ -104,10 +104,10 @@ This project is built using **ReactJS** and follows the design and functionality
 - Banner matches Figma✅
 - JSON with 6 items✅
 - Active auctions section complete✅
-- Favorite items functionality working
+- Favorite items functionality working✅
 - React-toastify integrated✅
 - Footer added✅
-- Challenge parts implemented
+- Challenge parts implemented ✅
 - 8 Git commits done✅
 
 ---
