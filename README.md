@@ -38,8 +38,8 @@ This project is built using **ReactJS** and follows the design and functionality
   - `image`
 
 ### 🏷️ Active Auctions Section 
-- Section Title and Subtitle should **match the Figma**
-- Show **6 items**, each with:
+[-] Section Title and Subtitle should **match the Figma**
+[-] Show **6 items**, each with:
   - 🖼️ Item Image
   - 🏷️ Item Name
   - 💰 Current Bid Price
