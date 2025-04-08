@@ -28,7 +28,7 @@ This project is built using **ReactJS** and follows the design and functionality
 [-] Create the banner **exactly like the Figma**.
 
 ### 🗂️ Create JSON for Bid Items 
-- Create a JSON file with **at least 6 bid items**, including:
+[-] Create a JSON file with **at least 6 bid items**, including:
   - `id`
   - `title`
   - `description`
@@ -63,7 +63,7 @@ This project is built using **ReactJS** and follows the design and functionality
   - An item is added to favorites.
 
 ### 🦶 Footer 
-- Build the footer **exactly as shown in Figma**
+[-] Build the footer **exactly as shown in Figma**
 
 ---
 

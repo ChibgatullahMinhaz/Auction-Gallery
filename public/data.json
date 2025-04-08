@@ -1,66 +1,66 @@
 [
     {
       "id": "1",
-      "title": "Smartphone - Galaxy Z Flip",
+      "title": "Vintage Leica M3 Camera",
       "description": "Foldable smartphone with 128GB storage and dual display.",
-      "currentBidPrice": 450.00,
-      "timeLeft": "2d 4h",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 12,
-      "image": "https://example.com/images/galaxy-z-flip.jpg"
+      "image": ""
     },
     {
       "id": "2",
-      "title": "Mountain Bike",
+      "title": "1965 Gibson SG Standard Electric Guitar",
       "description": "21-speed mountain bike with front suspension and disc brakes.",
-      "currentBidPrice": 320.75,
-      "timeLeft": "1d 12h",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 9,
-      "image": "https://example.com/images/mountain-bike.jpg"
+      "image": ""
     },
     {
       "id": "3",
-      "title": "4K Action Camera",
+      "title": "Original Apple Macintosh 128K (1984)",
       "description": "Waterproof 4K action camera with accessories bundle.",
-      "currentBidPrice": 89.99,
-      "timeLeft": "8h 30m",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 23,
-      "image": "https://example.com/images/action-camera.jpg"
+      "image": ""
     },
     {
       "id": "4",
-      "title": "Gaming Console - PS5",
+      "title": "Rolex Submariner 16610",
       "description": "Sony PlayStation 5 with one controller and Horizon game.",
-      "currentBidPrice": 610.00,
-      "timeLeft": "3d 1h",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 33,
-      "image": "https://example.com/images/ps5.jpg"
+      "image": ""
     },
     {
       "id": "5",
-      "title": "Designer Handbag",
+      "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
       "description": "Luxury leather handbag with gold hardware and dust bag.",
-      "currentBidPrice": 280.25,
-      "timeLeft": "14h 20m",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 17,
-      "image": "https://example.com/images/designer-handbag.jpg"
+      "image": ""
     },
     {
       "id": "6",
-      "title": "Wireless Mechanical Keyboard",
+      "title": "Mid-Century Modern Eames Lounge Chair",
       "description": "RGB backlit mechanical keyboard with blue switches.",
-      "currentBidPrice": 64.99,
-      "timeLeft": "5h 5m",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 7,
-      "image": "https://example.com/images/mechanical-keyboard.jpg"
+      "image": "https://i.ibb.co.com/W4pJnsjg/Bid5-min.png"
     },
     {
       "id": "7",
-      "title": "Drone with 4K Camera",
+      "title": "Banksy Original Screen Print",
       "description": "Foldable drone with 4K camera and GPS for beginners.",
-      "currentBidPrice": 150.00,
-      "timeLeft": "1d 6h",
+      "currentBidPrice": "$2,850",
+      "timeLeft": "2 Days left",
       "bidsCount": 19,
-      "image": "https://example.com/images/drone.jpg"
+      "image": "https://i.ibb.co.com/5WdVpNvn/Bid7-min.png"
     }
   ]
   
