@@ -1,17 +1,17 @@
-
 # 🧾 **Auction Gallery Website**
 
 Welcome to the **Auction Gallery Project** 🎯  
 This project is built using **ReactJS** and follows the design and functionality as provided in **Figma**.
 
-
 ## 🌟 **Key Guidelines (Must Follow)**
 
 🚫 **Do NOT:**
+
 - ❌ Ask about **mark distribution** in the group.
 - ❌ Post assignment feedback after receiving it.
 
 ✅ **Do:**
+
 - 💬 If you have a complaint or issue, **join a support session** and discuss.
 - 🧠 Use **relevant and meaningful text** – no `lorem ipsum`.
 - 🎨 You can change colors, **but avoid using gobindo colors**.
@@ -21,14 +21,17 @@ This project is built using **ReactJS** and follows the design and functionality
 
 ## 📌 **Main Requirements**
 
-### ✅ Navbar 
-[-] Design the navbar **exactly like the Figma**.
+### ✅ Navbar
 
-### 🖼️ Banner 
-[-] Create the banner **exactly like the Figma**.
+- Design the navbar **exactly like the Figma**.✅
 
-### 🗂️ Create JSON for Bid Items 
-[-] Create a JSON file with **at least 6 bid items**, including:
+### 🖼️ Banner
+
+- Create the banner **exactly like the Figma**.✅
+
+### 🗂️ Create JSON for Bid Items ✅
+
+- Create a JSON file with **at least 6 bid items**, including: ✅
   - `id`
   - `title`
   - `description`
@@ -37,70 +40,79 @@ This project is built using **ReactJS** and follows the design and functionality
   - `bidsCount`
   - `image`
 
-### 🏷️ Active Auctions Section 
-[-] Section Title and Subtitle should **match the Figma**
-[-] Show **6 items**, each with:
-  [-] 🖼️ Item Image
-  [-] 🏷️ Item Name
-  [-] 💰 Current Bid Price
-  [-] ⏳ Time Left
-  [- ]❤️ **"Bid Now" button**
+### 🏷️ Active Auctions Section
 
-### ❤️ Favorite Items Section 
-[-] Initially shows:
-  [-] Title
-  [-] "No items" message
-  [-] Total amount = 0
-[-] After clicking on ❤️ icon, item will be added to favorites:
-  [-] Item Name
-  [-] Current Bid Price
-  [-] Bids Count
-  [-] ❌ Remove Icon
+- Section Title and Subtitle should **match the Figma**✅
+- Show **6 items**, each with:✅
+  - 🖼️ Item Image ✅
+  - 💰 Current Bid Price ✅
+  - 🏷️ Item Name ✅
+  - ⏳ Time Left ✅
+  - ❤️ **"Bid Now" button** ✅
+
+### ❤️ Favorite Items Section ✅
+
+- Initially shows:
+- Title✅
+- "No items" message✅
+- Total amount = 0
+- After clicking on ❤️ icon, item will be added to favorites:
+- Item Name✅
+- Current Bid Price✅
+- Bids Count✅
+- ❌ Remove Icon ✅
+
 - Favorite total price will **update accordingly** the Current Bid Price
 
-### 📦 React-Toastify Integration 
-[-] Use `react-toastify` to show a toast notification when:
-  [-] An item is added to favorites.
+### 📦 React-Toastify Integration ✅
 
-### 🦶 Footer 
-[-] Build the footer **exactly as shown in Figma**
+- Use `react-toastify` to show a toast notification when:
+- An item is added to favorites.
+
+### 🦶 Footer
+
+- Build the footer **exactly as shown in Figma**✅
 
 ---
 
 ## ⚔️ **Challenge Requirements**
 
-### 🧾 Show Data Using Table 
-[-]Display bid items inside a **table format**.
+### 🧾 Show Data Using Table✅
 
-### 🔒 Disable ❤️ Button After Click 
-[-] Clicking on ❤️ will:
-  [-] Change cursor to `not-allowed`
-  [-] Disable the button
-  [-] color it as red
+-Display bid items inside a **table format**.✅
 
-### ❌ Remove from Favorites 
+### 🔒 Disable ❤️ Button After Click ✅
+
+- Clicking on ❤️ will:✅
+- Change cursor to `not-allowed`✅
+- Disable the button✅
+- color it as red✅
+
+### ❌ Remove from Favorites
+
 - Clicking ❌ will:
   - Remove the item from the list
   - Deduct price from total
 
 ---
+
 ---
 
-## ✅ Final Checklist- Just check for your safety.Thats why it is added. 
+## ✅ Final Checklist- Just check for your safety.Thats why it is added.
 
-- Navbar matches Figma
-- Banner matches Figma
-- JSON with 6 items
-- Active auctions section complete
+- Navbar matches Figma✅
+- Banner matches Figma✅
+- JSON with 6 items✅
+- Active auctions section complete✅
 - Favorite items functionality working
-- React-toastify integrated
-- Footer added
+- React-toastify integrated✅
+- Footer added✅
 - Challenge parts implemented
-- 8 Git commits done
+- 8 Git commits done✅
 
 ---
 
 Happy Coding! 🚀  
 If you get stuck, remember to reach out during support sessions! 💬
 
---- 
+---
