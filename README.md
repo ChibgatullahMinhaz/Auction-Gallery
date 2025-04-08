@@ -47,10 +47,10 @@ This project is built using **ReactJS** and follows the design and functionality
   - ❤️ **"Bid Now" button**
 
 ### ❤️ Favorite Items Section 
-- Initially shows:
-  - Title
-  - "No items" message
-  - Total amount = 0
+[-] Initially shows:
+  [-] Title
+  [-] "No items" message
+  [-] Total amount = 0
 - After clicking on ❤️ icon, item will be added to favorites:
   - Item Name
   - Current Bid Price

@@ -27,16 +27,16 @@ return (
             </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
             {isloading ? (
                 <Loader />
             ) : (
-                <div className="col-span-3">
+                <div className="col-span-3 shadow-xl rounded-box rounded-l-2xl">
                     <Table tabledata={tabledata} />
                 </div>
             )}
 
-            <div className="border-2 col-span-1 rounded-box p-5 bg-white rounded-l-2xl">
+            <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
                 <Favorite />
             </div>
         </div>
