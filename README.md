@@ -59,8 +59,8 @@ This project is built using **ReactJS** and follows the design and functionality
 - Favorite total price will **update accordingly** the Current Bid Price
 
 ### 📦 React-Toastify Integration 
-- Use `react-toastify` to show a toast notification when:
-  - An item is added to favorites.
+[-] Use `react-toastify` to show a toast notification when:
+  [-] An item is added to favorites.
 
 ### 🦶 Footer 
 [-] Build the footer **exactly as shown in Figma**

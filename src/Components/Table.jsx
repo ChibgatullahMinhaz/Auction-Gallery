@@ -1,8 +1,13 @@
 import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
+import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
-const Table = ({ tabledata }) => {
-  console.log(tabledata);
+const Table = ({ tabledata, handleBit }) => {
+  const habletoast = () => {
+    toast("An item is added to favorites.");
+  };
+
   return (
     <div>
       <div className=" md:col-span-3  bg-white rounded-l-2xl">
@@ -17,24 +22,25 @@ const Table = ({ tabledata }) => {
                 <th>Bid Now</th>
               </tr>
             </thead>
-            <tbody  >
+            <tbody>
               {tabledata.map((data) => {
                 return (
-                  <tr className="border-b-2 p-4 mt-3 border-gray-200">
-                  <td className="flex items-center gap-2">
-                  <img
-                      src={data.image}
-                      alt={data.title}
-                      className="h-10 w-10"
-                    />
-                    <h1>{data.title}</h1>
-                  </td>
+                  <tr key={data.id} className="border-b-2 p-4 mt-3 text-center border-gray-200">
+                    <td className="flex items-center gap-2">
+                      <img
+                        src={data.image}
+                        alt={data.title}
+                        className="h-10 w-10"
+                      />
+                      <h1>{data.title}</h1>
+                    </td>
                     <td className="font-semibold">{data.currentBidPrice}</td>
                     <td>{data.timeLeft}</td>
-                    <button>
-                    <AiOutlineHeart />
-
-                    </button>
+                    
+                    <td className="text-right" onClick={() => handleBit(data)}>
+                      <AiOutlineHeart onClick={habletoast} size={20} />
+                    </td>
+                    <ToastContainer />
                   </tr>
                 );
               })}

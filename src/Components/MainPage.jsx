@@ -18,30 +18,35 @@ const MainPage = () => {
       setLoading(false);
     }
   }, [isloading]);
-return (
+
+  const handleBit = (data) => {
+    console.log(data);
+  };
+
+  return (
     <div className="container mx-auto mt-10 mb-10 p-10 bg-[#F9F9F9] min-h-screen">
-        <div className="mb-5">
-            <h1 className="text-blue-950 font-bold text-xl">Active Auctions</h1>
-            <p className="font-semibold text-gray-500">
-                Discover and bid on extraordinary items
-            </p>
-        </div>
+      <div className="mb-5">
+        <h1 className="text-blue-950 font-bold text-xl">Active Auctions</h1>
+        <p className="font-semibold text-gray-500">
+          Discover and bid on extraordinary items
+        </p>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-            {isloading ? (
-                <Loader />
-            ) : (
-                <div className="col-span-3 shadow-xl rounded-box rounded-l-2xl">
-                    <Table tabledata={tabledata} />
-                </div>
-            )}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+        {isloading ? (
+          <Loader />
+        ) : (
+          <div className="col-span-3 shadow-xl rounded-box rounded-l-2xl">
+            <Table tabledata={tabledata} handleBit={handleBit} />
+          </div>
+        )}
 
-            <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
-                <Favorite />
-            </div>
+        <div className=" h-auto   col-span-1 shadow-xl rounded-box  bg-white rounded-l-2xl">
+          <Favorite />
         </div>
+      </div>
     </div>
-);
+  );
 };
 
 export default MainPage;
