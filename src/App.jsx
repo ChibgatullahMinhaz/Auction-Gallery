@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
+import MainPage from './Components/MainPage'
 
 function App() {
 
   return (
     <>
-    
-     <h1>Auction Gallery</h1>
+    <MainPage></MainPage>
     </>
   )
 }
