@@ -3,7 +3,6 @@ import { RxCross2 } from "react-icons/rx";
 
 export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
  
-  
   return (
     <div>
       <div className="flex items-center border-b-1 border-gray-200 justify-center gap-2 mb-5">
@@ -23,9 +22,9 @@ export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
               className="flex items-center justify-between border-b-1 gap-1 border-gray-200 px-5 mb-5"
             >
               <img src={data.image} alt={data.title} className="h-15 w-15" />
-              <div>
-                <h1>{data.title}</h1>
-                <div className="flex items-center justify-between">
+              <div className="px-3">
+                <h1 className="line-clamp-1 font-semibold">{data.title}</h1>
+                <div className="flex items-center gap-4">
                   <h1 className="font-normal text-gray-600">
                     {data.currentBidPrice}
                   </h1>
@@ -34,9 +33,11 @@ export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
                   </h1>
                 </div>
               </div>
-              <div>
-                <button onClick={()=>handleRemoveItem(data.id)}>
-                  <RxCross2 />
+              <div className="relative">
+                <button onClick={()=>handleRemoveItem(data.id)}
+                  className="cursor-pointer bg-white rounded-full p-2 border-1 border-gray-200 hover:bg-gray-200 "
+                  >
+                  <RxCross2  />
                 </button>
               </div>
             </div>

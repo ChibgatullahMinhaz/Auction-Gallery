@@ -28,7 +28,10 @@ const MainPage = () => {
     if (!favorites.find((item) => item.id === data.id)) {
       setFavorites([...favorites, data]);
       const getItemPrice = parseFloat(
-        data.currentBidPrice.replace("$", "").replace(",", "")
+        data
+        .currentBidPrice
+        .replace("$", "")
+        .replace(",", "")
       );
       setTotalPrice(totalPrice + getItemPrice);
     } else {
@@ -39,7 +42,15 @@ const MainPage = () => {
   const handleRemoveItem = (itemId) => {
     if (itemId) {
       toast("Item Removed from favorites"); 
-      setFavorites((prev) => prev.filter((item) => item.id !== itemId));
+      setFavorites(favorites.filter((item) => item.id !== itemId));
+      const getRemoveItemPrice = parseFloat(
+        favorites.find((item) => 
+          item.id === itemId)
+        .currentBidPrice
+          .replace("$", "")
+          .replace(",", "")
+      );
+      setTotalPrice(totalPrice - getRemoveItemPrice);
     }
   };
   return (
