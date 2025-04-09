@@ -16,7 +16,7 @@ const Table = ({ tabledata, handleBit }) => {
   };
   return (
     <div>
-      <div className=" md:col-span-3  bg-white rounded-l-2xl">
+      <div className=" md:col-span-3  bg-white rounded-2xl">
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 p-4">
           <table className="table">
             {/* head */}

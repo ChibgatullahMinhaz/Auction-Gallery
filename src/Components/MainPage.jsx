@@ -68,7 +68,7 @@ const MainPage = () => {
         {isloading ? (
           <Loader />
         ) : (
-          <div className="col-span-2 shadow-xl rounded-box rounded-l-2xl self-start">
+          <div className="col-span-2 shadow-xl rounded-box  bg-white rounded-2xl self-start">
             <Table tabledata={tabledata} handleBit={handleBit} />
           </div>
         )}
