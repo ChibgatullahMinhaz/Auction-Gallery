@@ -15,9 +15,9 @@ const Table = ({ tabledata, handleBit }) => {
     setClickedIcons([...clickedIcons, data.id]);
   };
   return (
-    <div>
-      <div className=" md:col-span-3  bg-white rounded-2xl">
-        <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 p-4">
+    <div className="p-4">
+      <div className=" md:col-span-3 border-2 border-gray-300  bg-white rounded-2xl">
+        <div className="overflow-x-auto rounded-box p-4">
           <table className="table">
             {/* head */}
             <thead className="border-b-2 border-gray-200">
@@ -40,12 +40,12 @@ const Table = ({ tabledata, handleBit }) => {
                       <img
                         src={data.image}
                         alt={data.title}
-                        className="h-10 w-10"
+                        className="h-10 w-10 rounded-lg"
                       />
-                      <h1>{data.title}</h1>
+                      <h1 className="font-semibold">{data.title}</h1>
                     </td>
-                    <td className="font-semibold">{data.currentBidPrice}</td>
-                    <td>{data.timeLeft}</td>
+                    <td className="font-bold">{data.currentBidPrice}</td>
+                    <td className="font-medium">{data.timeLeft}</td>
 
                     <td className="text-right">
                       <button

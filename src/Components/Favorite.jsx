@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
  
   return (
-    <div>
+    <div className="p-3">
       <div className="flex items-center border-b-1 border-gray-200 justify-center gap-2 mb-5">
         <AiOutlineHeart />
         <h1 className="font-semibold text-xl">Favorite Items</h1>
@@ -19,16 +19,16 @@ export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
           return (
             <div
               key={data.id}
-              className="flex items-center justify-between border-b-1 gap-1 border-gray-200 px-5 mb-5"
+              className="flex items-center justify-between border-2 p-2 rounded-xl gap-1 border-gray-300 px-5 mb-5"
             >
-              <img src={data.image} alt={data.title} className="h-15 w-15" />
+              <img src={data.image} alt={data.title} className="h-14 w-14 object-cover border-2 border-gray-300 rounded-lg" />
               <div className="px-3">
                 <h1 className="line-clamp-1 font-semibold">{data.title}</h1>
                 <div className="flex items-center gap-4">
-                  <h1 className="font-normal text-gray-600">
+                  <h1 className="font-bold text-gray-600">
                     {data.currentBidPrice}
                   </h1>
-                  <h1 className="font-normal text-gray-600">
+                  <h1 className="font-medium text-gray-600">
                     Bids:{data.bidsCount}
                   </h1>
                 </div>
@@ -47,7 +47,7 @@ export const Favorite = ({ favorites, totalPrice,handleRemoveItem }) => {
 
       <div className="flex items-center justify-between mt-5 mb-5 px-2">
         <h1 className="font-semibold text-xl"> Total bids Amount</h1>
-        <h1 className="font-medium text-xl">
+        <h1 className="font-bold text-xl">
           $<span>{totalPrice}</span>
         </h1>
       </div>
